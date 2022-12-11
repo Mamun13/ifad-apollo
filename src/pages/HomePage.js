@@ -14,6 +14,7 @@ import MapSearch from '../components/Section/MapSearch/MapSearch';
 import Footer from '../components/Section/Footer/Footer';
 // import MobileNav from '../components/MobileNav/MobileNav';
 import Loading from '../components/Loading/Loading';
+import Contacts from '../components/Section/contacts/Contacts';
 
 
 
@@ -44,6 +45,7 @@ class HomePage extends Component {
           <Video/>
           <NewsEvents/>
           <Partner/>
+          <Contacts/>
           <MapSearch/>
           <Footer/>
         </Fragment>
