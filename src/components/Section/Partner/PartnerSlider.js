@@ -6,7 +6,7 @@ import Carousel from 'react-bootstrap/Carousel';
 const PartnerSlider = ({ sendCompanyLogo }) => {
 	return (
 		<>
-			<section className="pb-4">
+			<section id='partner' className="pb-4">
 				<div className="container">
 					<div className="row">
 						<Carousel>

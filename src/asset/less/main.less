@@ -71,6 +71,60 @@ a:hover {
 }
 // Banner part end
 
+// gallery part start
+.gallery {
+	background-color: #fef1f1;
+	position: relative;
+}
+.gallery .product-g::after {
+	position: absolute;
+	content: '';
+	top: 57px;
+	left: 39.2%;
+	width: 34px;
+	height: 2px;
+	background-color: red;
+	border-radius: 50px;
+}
+.gallery .product-g::before {
+	position: absolute;
+	content: '';
+	top: 64px;
+	left: 40.2%;
+	width: 20px;
+	height: 3px;
+	background-color: red;
+	border-radius: 50px;
+}
+.gallery ul.mb-3.nav.nav-tabs {
+	margin-left: 50%;
+	transform: translate(-15%);
+}
+.gallery ul.d-flex.justify-content-center.nav.nav-tabs {
+	border: none;
+}
+
+.gallery .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+	border-radius: 50px;
+    color: #fff !important;
+    background-color:#EE3235 !important; 
+    border-color: none !important;
+}
+.gallery .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+    isolation: isolate;
+    border-color: transparent !important;
+}
+.gallery .nav-link {
+	font-weight: 700;
+     color: #000;
+	 transition: none;
+}
+// .gallery .border{
+//  border: 1px solid #d71921;
+// }
+
+// gallery part end
+
 // Footer Part start
 .footer {
 	background: url(.././images/footer/backgrond.png) no-repeat center;
@@ -121,14 +175,24 @@ a:hover {
 .card-anchor:hover {
 	color: #ee3235 !important;
 }
+
 // .slick-dots{
 //   position: absolute !important;
 // }
 // news part start
-
-button#fill-tab-example-tab-home::after {
+#fill-tab-example-tab-home {
+	position: relative;
+}
+#fill-tab-example-tab-home::after {
+	content: url(../images/bikecategory/heavy-truck\ 1.png) !important;
+	display: inline-block;
 	position: absolute;
-	content: '*';
+	top: 0;
+	left: 0;
+	width: 50px;
+	height: 50px;
+	// background-image: url(../images/bikecategory/heavy-truck\ 1.png);
+	// background-size: contain;
 }
 
 // partner part start
@@ -182,8 +246,11 @@ button#fill-tab-example-tab-home::after {
 	border-radius: 50px;
 }
 .slick-prev:before {
-	content: '←';
-	color: red !important;
+	content: url(../images/arrow.png) !important;
+	display: inline-block !important;
+	height: 20px !important;
+	width: 20px !important;
+	background-color: red;
 }
 .slick-next:before {
 	content: '→';
@@ -233,3 +300,36 @@ input::-webkit-inner-spin-button {
 	background: #ee3235;
 }
 // contact part end
+
+// map part start
+.map {
+	background: url(../images/map.png) no-repeat center;
+	background-size: cover;
+	box-shadow: inset 0 0 0 2000px rgba(32, 32, 32, 0.5);
+	height: 377px;
+}
+.map .select select.form-select.mb-3 {
+	width: 220px;
+	box-shadow: none;
+	background: none;
+	color: #fff;
+	border: none;
+	border-radius: 0;
+	text-transform: uppercase;
+	border-bottom: 1px solid #fff;
+}
+.blueprint {
+	position: relative;
+	top: -78px;
+}
+#partner .carousel-indicators {
+	display: none;
+}
+#partner .carousel-control-prev-icon {
+	background-image: url('../images/arrow.png');
+}
+#partner .carousel-control-next-icon {
+	background-image: url('../images/arrow.png');
+	transform: rotate(180deg);
+}
+// map part end

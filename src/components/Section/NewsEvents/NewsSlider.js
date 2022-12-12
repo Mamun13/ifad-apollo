@@ -11,11 +11,29 @@ import Slider from 'react-slick';
 const NewsSlider = ({ sendCardData }) => {
 	// console.log(sendCompanyLogo);
 	var settings = {
-		dots: true,
+		dots: false,
 		infinite: true,
 		speed: 500,
 		slidesToShow: 3,
 		slidesToScroll: 1,
+		responsive: [
+			{
+			  breakpoint: 992,
+			  settings: {
+				slidesToShow: 2,
+				slidesToScroll: 2,
+				infinite: true,
+				dots: true,
+			  }
+			},
+			{
+			  breakpoint: 767,
+			  settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1
+			  }
+			}
+		  ]
 	};
 	return (
 		<>
@@ -24,8 +42,8 @@ const NewsSlider = ({ sendCardData }) => {
 					{sendCardData.map((curElem) => {
 						return (
 							<>
-								<div className="col-lg-4 mb-5">
-									<Card style={{ width: '22rem' }}>
+								<div className="mb-5 p-3">
+									<Card >
 										<Card.Img variant="top" src={Img} />
 										<Card.Body>
 											{/* <Card.Title>Card Title</Card.Title> */}
