@@ -30,7 +30,7 @@ const Contacts = () => {
 								<div className="col-lg-4">
 									<div class="form-floating mb-3">
                                         <BsPencil className='icon2'/>
-										<textarea class="form-control rounded-1"  rows="3" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+										<textarea class="form-control rounded-1"  rows="10" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
 										<label for="floatingTextarea" className='label'>Comments</label>
 									</div>
 									<button type="submit" class="btn btn-primary rounded-1 bg-danger border-0">

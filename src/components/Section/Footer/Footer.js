@@ -20,7 +20,7 @@ const Footer = () => {
             <div className="col-lg-6">
               <ul className="list-group font-calibri text-uppercase list-group-horizontal list-unstyled wrap mt-5 mb-5">
                 <li className='pt-2 footer-border'>
-                  <Link to="" className='pe-4 text-light '> About Us</Link>
+                  <Link to="" className='pe-4 fs-18 text-light '> About Us</Link>
                 </li>
                 <li className='pt-2 footer-border'>
                   <Link to="" className='pe-4 fs-18 text-light '>Products</Link>

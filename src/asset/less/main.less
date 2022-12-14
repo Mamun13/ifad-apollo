@@ -40,14 +40,46 @@
 a {
 	text-decoration: none !important;
 }
-a:hover {
+#sectionOne a {
+	text-decoration: none !important;
+	position: relative;
+}
+#sectionOne a.active {
 	color: #fff !important;
+}
+#sectionOne .text-dark:hover {
+	color: #fff !important;
+	transition: all linear 0.3s;
+}
+#sectionOne .text-dark:hover::after {
+	position: absolute;
+	content: '';
+	top: -5px;
+	left: 33px;
+	width: 2px;
+	height: 13px;
+	background-color: #d71921;
+	transform: rotate(25deg);
+	// opacity: 1;
+}
+
+#sectionOne .text-dark:hover::before {
+	position: absolute;
+	content: '';
+	top: 34px;
+	left: 16px;
+	width: 2px;
+	height: 13px;
+	background-color: #d71921;
+	transform: rotate(25deg);
+	// opacity: 0;
+}
+#sectionOne .carousel-indicators {
+	bottom: 90px !important;
 }
 
 // Banner part start
-.banner-height {
-	height: 100vh;
-}
+
 .carousel-indicators [data-bs-target] {
 	box-sizing: content-box;
 	flex: 0 1 auto;
@@ -70,6 +102,33 @@ a:hover {
 	opacity: 1;
 }
 // Banner part end
+
+// best bike part start
+.best_bike .product_gallery.mb-5 {
+	height: 305px;
+}
+.best_bike ul.d-flex.justify-content-center.nav.nav-tabs {
+	border: 0;
+}
+.best_bike .nav-link {
+	transition: none;
+}
+.best_bike .card_bg {
+	background: url(../images//gallery/Galleryimg.png) no-repeat center;
+	background-size: cover;
+}
+.best_bike .product_gallery .img-align {
+	margin-left: 50%;
+	transform: translate(-50%);
+}
+.best_bike .product_gallery .bg {
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.best_bike .nav-link {
+	color: none !important;
+}
+
+// best bike part end
 
 // gallery part start
 .gallery {
@@ -104,25 +163,42 @@ a:hover {
 	border: none;
 }
 
-.gallery .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+.gallery .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
 	border-radius: 50px;
-    color: #fff !important;
-    background-color:#EE3235 !important; 
-    border-color: none !important;
+	color: #fff !important;
+	background-color: #ee3235 !important;
+	border-color: none !important;
 }
-.gallery .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
-    isolation: isolate;
-    border-color: transparent !important;
+.gallery .nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+	isolation: isolate;
+	border-color: transparent !important;
 }
 .gallery .nav-link {
 	font-weight: 700;
-     color: #000;
-	 transition: none;
+	color: #000;
+	transition: none;
 }
-// .gallery .border{
-//  border: 1px solid #d71921;
-// }
-
+.gallery .nav {
+	--bs-nav-link-color: none !important;
+	--bs-nav-link-hover-color: none !important;
+	--bs-nav-link-disabled-color: none !important;
+}
+.gallery .playicon {
+	position: absolute;
+	font-size: 40px;
+	color: #fff;
+	margin-left: 50%;
+	transform: translate(-50%);
+	margin-top: 25%;
+}
+.modal-body {
+	height: 300px !important;
+}
+.gallery .product_gallery.mb-5 {
+	height: 305px;
+}
 // gallery part end
 
 // Footer Part start
@@ -175,33 +251,27 @@ a:hover {
 .card-anchor:hover {
 	color: #ee3235 !important;
 }
-
+.news-back .load_button {
+	// background-color: red;
+	border: 1px solid rgb(246, 176, 25);
+	padding: 10px 20px;
+	color: rgb(246, 176, 25);
+	transition: all linear 0.3s;
+}
+.news-back .load_button:hover {
+	background: rgb(246, 176, 25);
+	color: #fff;
+}
 // .slick-dots{
 //   position: absolute !important;
 // }
-// news part start
-#fill-tab-example-tab-home {
-	position: relative;
-}
-#fill-tab-example-tab-home::after {
-	content: url(../images/bikecategory/heavy-truck\ 1.png) !important;
-	display: inline-block;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 50px;
-	height: 50px;
-	// background-image: url(../images/bikecategory/heavy-truck\ 1.png);
-	// background-size: contain;
-}
+// news part end
 
 // partner part start
 .partner {
 	position: relative;
 }
-// .carousel-indicators {
-// 	display: none !important;
-// }
+
 .partner::after {
 	position: absolute;
 	content: '';
@@ -245,14 +315,14 @@ a:hover {
 	background-color: red;
 	border-radius: 50px;
 }
-.slick-prev:before {
-	content: url(../images/arrow.png) !important;
+.news-back .slick-prev:before {
+	content: url() !important;
 	display: inline-block !important;
 	height: 20px !important;
 	width: 20px !important;
 	background-color: red;
 }
-.slick-next:before {
+.news-back .slick-next:before {
 	content: '→';
 	color: red !important;
 }

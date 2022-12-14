@@ -11,9 +11,10 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import NavLogo from '../../../asset/images/logo/LOGO.png';
 import Carousel from 'react-bootstrap/Carousel';
 import { ImSearch } from 'react-icons/im';
-import Bannerimg from '../../../asset/images/banner/Sliderimg.png'
-import Bannerimgtwo from '../../../asset/images/banner/slidertwo.png'
-import Bannerimgthree from '../../../asset/images/banner/678.png'
+import Bannerimg from '../../../asset/images/banner/Sliderimg.png';
+import Bannerimgtwo from '../../../asset/images/banner/slidertwo.png';
+import Bannerimgthree from '../../../asset/images/banner/678.png';
+import Number from '../../../asset/images/footer/number.png';
 
 class TopBanner extends Component {
 	onScroll = () => {
@@ -42,8 +43,12 @@ class TopBanner extends Component {
 							<Navbar.Toggle aria-controls="navbarScroll" />
 							<Navbar.Collapse id="navbarScroll">
 								<Nav className="mx-auto my-2 my-lg-0 text-uppercase font-oswald fw-bold " style={{ maxHeight: '100px' }} navbarScroll>
-									<Nav.Link href="#action1" className='text-dark'>Home</Nav.Link>
-									<Nav.Link href="#action2" className='text-dark'>Royalenfield</Nav.Link>
+									<Nav.Link href="#action1" className="text-dark">
+										Home
+									</Nav.Link>
+									<Nav.Link href="#" className="text-dark">
+										Royalenfield
+									</Nav.Link>
 
 									{/* <NavDropdown title="Link" id="navbarScrollingDropdown">
 										<NavDropdown.Item href="#action3">Action</NavDropdown.Item>
@@ -51,44 +56,46 @@ class TopBanner extends Component {
 										<NavDropdown.Divider />
 										<NavDropdown.Item href="#action5">Something else here</NavDropdown.Item>
 									</NavDropdown> */}
-									<Nav.Link href="#" className='text-dark'>Dealer</Nav.Link>
-									<Nav.Link href="#" className='text-dark'>News & Events</Nav.Link>
-									<Nav.Link href="#" className='text-dark'>About US</Nav.Link>
-									<Nav.Link href="#" className='text-dark'>Contact</Nav.Link>
+									<Nav.Link href="#action3" className="text-dark">
+										Dealer
+									</Nav.Link>
+									<Nav.Link href="#action4" className="text-dark">
+										News & Events
+									</Nav.Link>
+									<Nav.Link href="/about_product" className="text-dark">
+										About US
+									</Nav.Link>
+									<Nav.Link href="#action6" className="text-dark">
+										Contact
+									</Nav.Link>
 								</Nav>
 								<Form className="d-flex">
 									<Link to="/">
-										<ImSearch className="my-2 text-light" />
+										<ImSearch className="mt-3 me-2 text-light" />
 									</Link>
-									<Button variant="outline-success">Search</Button>
+									<div className="left">
+										<Link to="#">
+											<img src={Number} alt="" className="float-end ms-2" />
+										 </Link>
+									</div>
 								</Form>
 							</Navbar.Collapse>
 						</Container>
 					</Navbar>
 
-
 					{/* banner part start */}
 
-					
 					<div className="banner-slider">
-						<Carousel fade className=' banner-height'>
+						<Carousel fade className=" banner-height">
 							<Carousel.Item>
-								<img
-									className="d-block w-100 tire"
-									src={Bannerimg}
-									alt="First slide"
-								/>
+								<img className="d-block w-100 tire" src={Bannerimg} alt="First slide" />
 								{/* <Carousel.Caption>
 									<h3>First slide label</h3>
 									<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
 								</Carousel.Caption> */}
 							</Carousel.Item>
 							<Carousel.Item>
-								<img
-									className="d-block w-100 tire"
-									src={Bannerimgtwo}
-									alt="Second slide"
-								/>
+								<img className="d-block w-100 tire" src={Bannerimgtwo} alt="Second slide" />
 
 								{/* <Carousel.Caption>
 									<h3>Second slide label</h3>
@@ -96,11 +103,7 @@ class TopBanner extends Component {
 								</Carousel.Caption> */}
 							</Carousel.Item>
 							<Carousel.Item>
-								<img
-									className="d-block w-100 tire"
-									src={Bannerimgthree}
-									alt="Third slide"
-								/>
+								<img className="d-block w-100 tire" src={Bannerimgthree} alt="Third slide" />
 
 								{/* <Carousel.Caption>
 									<h3>Third slide label</h3>

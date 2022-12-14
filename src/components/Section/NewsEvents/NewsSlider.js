@@ -9,7 +9,6 @@ import { GoChevronRight } from 'react-icons/go';
 import Slider from 'react-slick';
 
 const NewsSlider = ({ sendCardData }) => {
-	// console.log(sendCompanyLogo);
 	var settings = {
 		dots: false,
 		infinite: true,
@@ -18,22 +17,22 @@ const NewsSlider = ({ sendCardData }) => {
 		slidesToScroll: 1,
 		responsive: [
 			{
-			  breakpoint: 992,
-			  settings: {
-				slidesToShow: 2,
-				slidesToScroll: 2,
-				infinite: true,
-				dots: true,
-			  }
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2,
+					infinite: true,
+					dots: true,
+				},
 			},
 			{
-			  breakpoint: 767,
-			  settings: {
-				slidesToShow: 1,
-				slidesToScroll: 1
-			  }
-			}
-		  ]
+				breakpoint: 767,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				},
+			},
+		],
 	};
 	return (
 		<>
@@ -42,17 +41,17 @@ const NewsSlider = ({ sendCardData }) => {
 					{sendCardData.map((curElem) => {
 						return (
 							<>
-								<div className="mb-5 p-3">
-									<Card >
+								<div className="mb-4 p-3">
+									<Card>
 										<Card.Img variant="top" src={Img} />
 										<Card.Body>
 											{/* <Card.Title>Card Title</Card.Title> */}
-											<Card.Text className='fs-18 fw-semibold'>{curElem.text} </Card.Text>
+											<Card.Text className="fs-18 fw-semibold">{curElem.text} </Card.Text>
 											<div className="d-flex justify-content-between">
 												<Button variant="" className="p-0 text-danger fw-bold">
-													Read More <GoChevronRight/>
+													Read More <GoChevronRight />
 												</Button>
-												<p className='m-0 text-warning'>06 Nov, 2022</p>
+												<p className="m-0 text-warning">06 Nov, 2022</p>
 											</div>
 										</Card.Body>
 									</Card>
@@ -61,8 +60,10 @@ const NewsSlider = ({ sendCardData }) => {
 						);
 					})}
 				</Slider>
+				<div className="text-center mb-5">
+					<button className='load_button fw-semibold font-oswald'>Load More</button>
+				</div>
 			</div>
-
 		</>
 	);
 };
