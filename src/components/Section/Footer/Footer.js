@@ -5,7 +5,7 @@ import FooterApi from '../../../asset/images/footer/API-logo.png';
 import { CgFacebook } from 'react-icons/cg';
 import { BsInstagram } from 'react-icons/bs';
 import { AiFillLinkedin, AiFillYoutube } from 'react-icons/ai';
-import Number from '../../../asset/images/footer/number.png';
+import Number from '../../../asset/images/footer/contact.png';
 // import { BsFillBookFill } from "react-icons/bs";
 
 const Footer = () => {

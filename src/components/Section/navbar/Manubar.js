@@ -6,7 +6,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavLogo from '../../../asset/images/logo/LOGO.png';
 import { ImSearch } from 'react-icons/im';
-import Number from '../../../asset/images/footer/number.png';
+import Number from '../../../asset/images/footer/contact.png';
 
 const Manubar=()=> {
 	
