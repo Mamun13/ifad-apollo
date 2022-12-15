@@ -4,7 +4,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import Img from '../../../asset/images/news/Rectangle 27.png';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import { BsChevronRight } from 'react-icons/bs';
+// import { BsChevronRight } from 'react-icons/bs';
 import { GoChevronRight } from 'react-icons/go';
 import Slider from 'react-slick';
 

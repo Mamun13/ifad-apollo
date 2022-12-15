@@ -16,15 +16,15 @@ const Contacts = () => {
 								<div className="col-lg-4">
 									<div class="mb-3">
 										<BiUser className='icon'/>
-										<input type="text" class="form-control rounded-1" placeholder="Full Name" aria-describedby="emailHelp" />
+										<input type="text" class="form-control rounded-1 b-shadow" placeholder="Full Name" aria-describedby="emailHelp" />
 									</div>
 									<div class="mb-3">
 										<AiOutlineMail className='icon'/>
-										<input type="email" class="form-control rounded-1" aria-describedby="emailHelp" placeholder="Email" />
+										<input type="email" class="form-control rounded-1 b-shadow" aria-describedby="emailHelp" placeholder="Email" />
 									</div>
 									<div class="">
 										<HiPhone className='icon'/>
-										<input type="number" class="form-control rounded-1" aria-describedby="emailHelp" placeholder="Number  " />
+										<input type="number" class="form-control rounded-1 b-shadow" aria-describedby="emailHelp" placeholder="Number  " />
 									</div>
 								</div>
 								<div className="col-lg-4">

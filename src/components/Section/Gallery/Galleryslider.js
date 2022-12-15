@@ -10,7 +10,7 @@ import GalleryThree from '../../../asset/images/gallery/Galleryimg.png';
 import { FaPlay } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
-const Galleryslider = ({sendVideoData}) => {
+const Galleryslider = ({ sendVideoData }) => {
 	const [lgShow, setLgShow] = useState(false);
 
 	var settings = {
@@ -51,9 +51,10 @@ const Galleryslider = ({sendVideoData}) => {
 								<Modal.Header closeButton>
 									<Modal.Title id="example-modal-sizes-title-lg">Ifad Group</Modal.Title>
 								</Modal.Header>
-								<Modal.Body className='modal_body_height'>
+								<Modal.Body className="modal_body_height">
 									<div class="embed-responsive embed-responsive-16by9 h-100">
 										<iframe
+											title="videofour"
 											class="embed-responsive-item w-100 h-100"
 											src="https://www.youtube.com/embed/lvFSnh5NQ7I"
 											allowfullscreen
@@ -74,9 +75,10 @@ const Galleryslider = ({sendVideoData}) => {
 								<Modal.Header closeButton>
 									<Modal.Title id="example-modal-sizes-title-lg">Ifad Group</Modal.Title>
 								</Modal.Header>
-								<Modal.Body className='modal_body_height'>
+								<Modal.Body className="modal_body_height">
 									<div class="embed-responsive embed-responsive-16by9 h-100">
 										<iframe
+											title="videoone"
 											class="embed-responsive-item w-100 h-100"
 											src="https://www.youtube.com/embed/lvFSnh5NQ7I"
 											allowfullscreen
@@ -97,9 +99,10 @@ const Galleryslider = ({sendVideoData}) => {
 								<Modal.Header closeButton>
 									<Modal.Title id="example-modal-sizes-title-lg">Ifad Group</Modal.Title>
 								</Modal.Header>
-								<Modal.Body className='modal_body_height'>
+								<Modal.Body className="modal_body_height">
 									<div class="embed-responsive embed-responsive-16by9 h-100">
 										<iframe
+											title="videptwo"
 											class="embed-responsive-item w-100 h-100"
 											src="https://www.youtube.com/embed/lvFSnh5NQ7I"
 											allowfullscreen
@@ -120,9 +123,10 @@ const Galleryslider = ({sendVideoData}) => {
 								<Modal.Header closeButton>
 									<Modal.Title id="example-modal-sizes-title-lg">Ifad Group</Modal.Title>
 								</Modal.Header>
-								<Modal.Body className='modal_body_height'>
+								<Modal.Body className="modal_body_height">
 									<div class="embed-responsive embed-responsive-16by9 h-100">
 										<iframe
+											title="videothree"
 											class="embed-responsive-item w-100 h-100"
 											src="https://www.youtube.com/embed/lvFSnh5NQ7I"
 											allowfullscreen
@@ -134,8 +138,6 @@ const Galleryslider = ({sendVideoData}) => {
 						<Card.Img variant="top" src={GalleryTwo} />
 					</Card>
 				</div>
-				
-				
 			</Slider>
 		</>
 	);

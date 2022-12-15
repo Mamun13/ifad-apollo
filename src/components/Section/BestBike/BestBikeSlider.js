@@ -1,14 +1,8 @@
 import React, { useState } from 'react';
-import Modal from 'react-bootstrap/Modal';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
-import Card from 'react-bootstrap/Card';
-import GalleryOne from '../../../asset/images/gallery/Gallery img.png';
-import GalleryTwo from '../../../asset/images/gallery/Rectangle 63.png';
-import GalleryThree from '../../../asset/images/gallery/Galleryimg.png';
 import TireOne from '../../../asset/images/alltire/1.png';
-import { FaPlay } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 const BestBikeSlider = () => {

@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 import BestBikeSlider from './BestBikeSlider';
-import HeavyTruck from '../../../asset/images/bikecategory/heavy-truck 1.png';
-import TabCategory from './TabCategory';
+// import HeavyTruck from '../../../asset/images/bikecategory/heavy-truck 1.png';
+// import TabCategory from './TabCategory';
 
 const BestBike = () => {
 	const [key, setKey] = useState('home');

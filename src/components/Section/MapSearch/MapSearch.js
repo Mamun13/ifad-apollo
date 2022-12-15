@@ -1,5 +1,5 @@
 import React from 'react';
-import { BsChevronDown } from 'react-icons/bs';
+// import { BsChevronDown } from 'react-icons/bs';
 import Map from '../../../asset/images/trans-map 2.png'
 
 const MapSearch = () => {

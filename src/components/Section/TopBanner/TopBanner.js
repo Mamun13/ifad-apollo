@@ -1,20 +1,19 @@
 import React, { Component, Fragment } from 'react';
 // import { Link } from 'react-scroll';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import $ from 'jquery';
 // import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+// import Container from 'react-bootstrap/Container';
+// import Form from 'react-bootstrap/Form';
+// import Nav from 'react-bootstrap/Nav';
+// import Navbar from 'react-bootstrap/Navbar';
 // import NavDropdown from 'react-bootstrap/NavDropdown';
-import NavLogo from '../../../asset/images/logo/LOGO.png';
+// import NavLogo from '../../../asset/images/logo/LOGO.png';
 import Carousel from 'react-bootstrap/Carousel';
-import { ImSearch } from 'react-icons/im';
+import ApolloLogo from '../../../asset/images/Apollo-Tyres-Logo-Vector.png';
 import Bannerimg from '../../../asset/images/banner/Sliderimg.png';
 import Bannerimgtwo from '../../../asset/images/banner/slidertwo.png';
 import Bannerimgthree from '../../../asset/images/banner/678.png';
-import Number from '../../../asset/images/footer/number.png';
 
 class TopBanner extends Component {
 	onScroll = () => {
@@ -35,33 +34,37 @@ class TopBanner extends Component {
 		return (
 			<Fragment>
 				<header className="sectionOne topSection clearfix" id="sectionOne">
-					
 					<div className="banner-slider">
 						<Carousel fade className=" banner-height">
 							<Carousel.Item>
 								<img className="d-block w-100 tire" src={Bannerimg} alt="First slide" />
 								<Carousel.Caption>
-									<h3>First slide label</h3>
+									<img src={ApolloLogo} alt="" className="apollo_logo" />
+									{/* <h3>First slide label</h3> */}
 									{/* <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
 								</Carousel.Caption>
 							</Carousel.Item>
 							<Carousel.Item>
 								<img className="d-block w-100 tire" src={Bannerimgtwo} alt="Second slide" />
 
-								{/* <Carousel.Caption>
-									<h3>Second slide label</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-								</Carousel.Caption> */}
+								<Carousel.Caption>
+									<img src={ApolloLogo} alt="" className="apollo_logo" />
+
+									{/* <h3>Second slide label</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
+								</Carousel.Caption>
 							</Carousel.Item>
 							<Carousel.Item>
 								<img className="d-block w-100 tire" src={Bannerimgthree} alt="Third slide" />
 
-								{/* <Carousel.Caption>
-									<h3>Third slide label</h3>
+								<Carousel.Caption>
+									<img src={ApolloLogo} alt="" className="apollo_logo" />
+
+									{/* <h3>Third slide label</h3>
 									<p>
 										Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-									</p>
-								</Carousel.Caption> */}
+									</p> */}
+								</Carousel.Caption>
 							</Carousel.Item>
 						</Carousel>
 					</div>
