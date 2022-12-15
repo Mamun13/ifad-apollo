@@ -1,5 +1,5 @@
 import React from 'react';
-import Mail from '../../../asset/images/contact/mail.png'
+// import Mail from '../../../asset/images/contact/mail.png'
 import { BiUser } from 'react-icons/bi';
 import { AiOutlineMail } from 'react-icons/ai';
 import { HiPhone } from 'react-icons/hi';

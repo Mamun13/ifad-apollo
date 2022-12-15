@@ -15,6 +15,7 @@ import Footer from '../components/Section/Footer/Footer';
 // import MobileNav from '../components/MobileNav/MobileNav';
 import Loading from '../components/Loading/Loading';
 import Contacts from '../components/Section/contacts/Contacts';
+import Manubar from '../components/Section/navbar/Manubar';
 
 
 
@@ -39,6 +40,7 @@ class HomePage extends Component {
       return (
         <Fragment>
           {/* <MobileNav/> */}
+          <Manubar/>
           <TopBanner />
           <BestBike/>
           <Gallery/>

@@ -15,6 +15,7 @@ import NotFountPage from '../pages/NotFountPage';
         <Switch>
           <Route exact path="/" component={HomePage}/>
           <Route exact path="/about_product" component={AboutProduct}/>
+          
           <Route path="*" component={NotFountPage} />
         </Switch>
       </Fragment>
