@@ -208,15 +208,15 @@ a {
 	background-color: #d71921;
 	opacity: 1;
 }
-.banner-slider {
-	position: relative;
-}
-.banner-slider .apollo_logo {
-	position: absolute;
-	width: 200px;
-	right: -90px;
-	top: -500px;
-}
+// .banner-slider {
+// 	position: relative;
+// }
+// .banner-slider .apollo_logo {
+// 	position: absolute;
+// 	width: 200px;
+// 	right: -140px;
+// 	top: -552px;
+// }
 // Banner part end
 
 // best bike part start
@@ -516,9 +516,9 @@ input::-webkit-inner-spin-button {
 	position: relative;
 	top: -78px;
 }
-#partner .carousel-indicators {
-	display: none;
-}
+// #partner .carousel-indicators {
+// 	display: none;
+// }
 #partner .carousel-control-prev-icon {
 	background-image: url('../images/arrow.png');
 }
@@ -553,4 +553,285 @@ section.about_content {
 	border-color: none !important;
 }
 
-// // about page end
+ // about page end
+
+
+
+
+
+
+ .goBtn{
+    display: inline-block;
+    width: 90px;
+    height: 42px;
+    border-radius: 100px;
+    line-height: 33px;
+    border: 1px solid #3f017c;
+    transition: all 0.4s;
+}
+.goBtn svg{
+    transform: translateX(40px);
+    transition: all 0.4s;
+}
+
+.goBtn:hover{
+    width: 95px;
+    /* background-color: rgba(63, 1, 124, 0.15); */
+    background-color: rgba(255, 255, 255, 0.50);
+}
+
+.goBtn:hover svg{
+    transform: translateX(30px)
+}
+/* Go button end here  */
+
+
+/* welcome start here  */
+.logoBar{
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.50);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.logoBar img{
+    max-width: 200px;
+}
+
+.welcome{
+    background-image: url(../images/bg.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.websiteLink{
+    position: absolute;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.item1, .item2{
+    text-align: center;
+    position: relative;
+}
+
+.item1::after{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 1px;
+    height: 400px;
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,0) 0%, rgba(0,212,255,0) 0%, rgba(68,68,68,1) 48%, rgba(255,255,255,0) 100%);
+    opacity: 0.5;
+}
+
+.tayerImg{
+    max-width: 300px;
+    width: 100%;
+    opacity: 0.10;
+}
+
+.motorcycleImg{
+    max-width: 450px;
+    width: 100%;
+    opacity: 0.10;
+}
+
+
+.logoAndBtn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.apolloLogo{
+    max-width: 200px;
+}
+
+.royalLogo{
+    max-width: 300px;
+}
+
+.exColor{
+    border-color: #da291c;
+}
+
+
+@media (max-width: 767px) {
+    .item1::after{
+        display: none;
+    }
+    .tayerImg{
+        max-width: 140px;
+    }
+    
+    .motorcycleImg{
+        max-width: 230px;
+    }
+    .item1{
+        margin-bottom: 30px;
+    }
+    .apolloLogo{
+        max-width: 130px !important;
+        margin-top: 15px;
+    }
+    .royalLogo{
+        max-width: 200px !important;
+    }
+    .logoBar img{
+        max-width: 170px;
+    }
+    .goBtn{
+        transform: scale(0.9);
+    }
+}
+/* welcome end here  */
+
+
+
+
+/* footer start here  */
+
+
+
+
+// .nav-link{
+//     font-size: 14px;
+//     font-weight: 600;
+//     color: #fff;
+//     text-transform: uppercase;
+//     position: relative;
+//     padding: 0;
+//     margin: 10px 15px;
+// }
+
+// .nav-link::after{
+//     content: '';
+//     display: inline-block;
+//     position: absolute;
+//     left: 0;
+//     bottom: -5px;
+//     width: 20px;
+//     height: 2px;
+//     background-color: #da291c;
+//     transition: all 0.4s;
+// }
+
+// .nav-link:hover, .nav-link:focus{
+//     color: rgba(255, 255, 255, 0.7);
+// }
+
+// .nav-link:hover::after{
+//     left: 50%;
+//     transform: translateX(-50%);
+// }
+
+// .footerItem h2{
+//     display: inline-block;
+//     text-align: right;
+//     color: #fff;
+//     font-size: 16px;
+//     font-weight: 600;
+//     text-transform: uppercase;
+// }
+// .social a{
+//     text-decoration: none;
+//     margin-left: 20px;
+//     font-size: 14px;
+//     color: #fff;
+//     transition: all 0.4s;
+// }
+// .social a:hover{
+//     opacity: 0.6;
+// }
+
+// .callNow{
+//     max-width: 80px;
+// }
+
+// .copy{
+//     position: absolute;
+//     left: 0;
+//     bottom: 15px;
+//     width: 100%;
+//     border-top: 1px solid rgba(255, 255, 255, 0.07);
+//     padding-top: 12px;
+// }
+
+// .copyRight{
+//     display: flex;
+//     justify-content: space-between;
+// }
+// .copyRight span{
+//     font-size: 14px;
+//     color: #aaa;
+// }
+// .APIlogo{
+//     max-width: 45px;
+//     margin-left: 5px;
+//     transform: translateY(-4px);
+// }
+// .condition > a{
+//     text-decoration: none;
+//     color: #aaa;
+//     margin-left: 10px;
+// }
+
+// @media (max-width: 767px) {
+//     .footer{
+//         padding-top: 30px;
+//         padding-bottom: 60px;
+//     }
+//     .footerLogo{
+//         max-width: 250px;
+//         display: inline-block;
+//         margin-bottom: 10px;
+//     }
+//     .footerItem{
+//         text-align: center !important;
+//     }
+//     .footerItem{
+//         margin-bottom: 10px;
+//     }
+//     .social a{
+//         margin-left: 10px;
+//         margin-right: 10px;
+//     }
+//     .copy>.container, .footer>.container{
+//         max-width: 100%;
+//         padding-right: 20px;
+//         padding-left: 20px;
+//     }
+
+// }
+// @media (max-width: 470px){
+//     .copyRight{
+//         flex-direction: column;
+//         align-items: center;
+//     }
+//     .footer{
+//         padding-bottom: 80px;
+//     }
+// }
+
+
+/* footer end here  */
+
+
+
+
+

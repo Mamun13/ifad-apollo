@@ -3,6 +3,7 @@ import {Route,Switch} from "react-router-dom";
 import AboutProduct from '../pages/AboutProduct';
 import HomePage from "../pages/HomePage";
 import NotFountPage from '../pages/NotFountPage';
+import Welcome from '../pages/Welcome';
 
 
 /**
@@ -15,6 +16,7 @@ import NotFountPage from '../pages/NotFountPage';
         <Switch>
           <Route exact path="/" component={HomePage}/>
           <Route exact path="/about_product" component={AboutProduct}/>
+          <Route exact path="/home_page" component={Welcome}/>
           
           <Route path="*" component={NotFountPage} />
         </Switch>

@@ -35,30 +35,30 @@ class TopBanner extends Component {
 			<Fragment>
 				<header className="sectionOne topSection clearfix" id="sectionOne">
 					<div className="banner-slider">
-						<Carousel fade className=" banner-height">
-							<Carousel.Item>
+						<Carousel fade className=" banner-height h-100">
+							<Carousel.Item className='position-relative'>
 								<img className="d-block w-100 tire" src={Bannerimg} alt="First slide" />
-								<Carousel.Caption>
-									<img src={ApolloLogo} alt="" className="apollo_logo" />
+								<Carousel.Caption className='position-absolute top-0 end-0'>
+									<img src={ApolloLogo} alt="" className="apollo_logo img-fluid float-end" style={{width:'200px'}}/>
 									{/* <h3>First slide label</h3> */}
 									{/* <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
 								</Carousel.Caption>
 							</Carousel.Item>
-							<Carousel.Item>
+							<Carousel.Item className='position-relative'>
 								<img className="d-block w-100 tire" src={Bannerimgtwo} alt="Second slide" />
 
-								<Carousel.Caption>
-									<img src={ApolloLogo} alt="" className="apollo_logo" />
+								<Carousel.Caption className='position-absolute top-0 end-0'>
+									<img src={ApolloLogo} alt="" className="apollo_logo img-fluid float-end" style={{width:'200px'}}/>
 
 									{/* <h3>Second slide label</h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
 								</Carousel.Caption>
 							</Carousel.Item>
-							<Carousel.Item>
+							<Carousel.Item className='position-relative'>
 								<img className="d-block w-100 tire" src={Bannerimgthree} alt="Third slide" />
 
-								<Carousel.Caption>
-									<img src={ApolloLogo} alt="" className="apollo_logo" />
+								<Carousel.Caption className='position-absolute top-0 end-0'>
+									<img src={ApolloLogo} alt="" className="apollo_logo img-fluid float-end" style={{width:'200px'}}/>
 
 									{/* <h3>Third slide label</h3>
 									<p>
