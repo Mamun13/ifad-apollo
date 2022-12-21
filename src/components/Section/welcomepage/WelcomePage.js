@@ -6,7 +6,7 @@ import HomeTyre from '../../../asset/images/homepage/tayer-bg.png'
 import HomeMotorcycle from '../../../asset/images/homepage/motorcycle-bg.png'
 import Footer from '../Footer/Footer';
 
-const HomePage = () => {
+const WelcomePage = () => {
 	return (
 		<>
 			<section className="homepage">
@@ -58,4 +58,4 @@ const HomePage = () => {
 	);
 };
 
-export default HomePage;
+export default WelcomePage;

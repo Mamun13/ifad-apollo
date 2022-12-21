@@ -7,17 +7,18 @@ const Partner = () => {
 	const [logosData, setlogosData] = useState(SliderLogo);
 	return (
 		<>
-			<section className='mt-5 mb-5'>
-				<h2 className="text-center fw-bold font-oswald font-36 mt-4 partner">Partners</h2>
-				<p className="text-center font-16 font-lato">
-					It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-					<br />
-					The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed
-				</p>
+			<section id='partners' className='section_padding'>
+				<div className='sectionTitle'>
+					<h2 className="secTitle">Partners</h2>
+					<p className="text-center font-16 font-lato mb-5">
+						It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+						<br />
+						The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed
+					</p>
+				</div>
+				
 				<div className="container">
-					<div className="row">
-						<PartnerSlider sendCompanyLogo={logosData} />
-					</div>
+					<PartnerSlider sendCompanyLogo={logosData} />
 				</div>
 			</section>
 		</>

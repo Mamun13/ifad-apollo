@@ -42,100 +42,24 @@ const Galleryslider = ({ sendVideoData }) => {
 		<>
 			<Slider {...settings}>
 				{/* {sendVideoData.map((curElem)=>{})} */}
-				<div className="p-3 ">
+				<div className="px-3">
 					<Card className="border-0 bg-transparent">
-						<Link to="#">
-							<FaPlay className="playicon" onClick={() => setLgShow(true)} />
-
-							<Modal size="lg" show={lgShow} onHide={() => setLgShow(false)} aria-labelledby="example-modal-sizes-title-lg">
-								<Modal.Header closeButton>
-									<Modal.Title id="example-modal-sizes-title-lg">Ifad Group</Modal.Title>
-								</Modal.Header>
-								<Modal.Body className="modal_body_height">
-									<div class="embed-responsive embed-responsive-16by9 h-100">
-										<iframe
-											title="videofour"
-											class="embed-responsive-item w-100 h-100"
-											src="https://www.youtube.com/embed/lvFSnh5NQ7I"
-											allowfullscreen
-										></iframe>
-									</div>
-								</Modal.Body>
-							</Modal>
-						</Link>
 						<Card.Img variant="top" src={GalleryOne} />
 					</Card>
 				</div>
-				<div className="p-3 ">
+				<div className="px-3">
 					<Card className="border-0 bg-transparent">
-						<Link to="#">
-							<FaPlay className="playicon" onClick={() => setLgShow(true)} />
-
-							<Modal size="lg" show={lgShow} onHide={() => setLgShow(false)} aria-labelledby="example-modal-sizes-title-lg">
-								<Modal.Header closeButton>
-									<Modal.Title id="example-modal-sizes-title-lg">Ifad Group</Modal.Title>
-								</Modal.Header>
-								<Modal.Body className="modal_body_height">
-									<div class="embed-responsive embed-responsive-16by9 h-100">
-										<iframe
-											title="videoone"
-											class="embed-responsive-item w-100 h-100"
-											src="https://www.youtube.com/embed/lvFSnh5NQ7I"
-											allowfullscreen
-										></iframe>
-									</div>
-								</Modal.Body>
-							</Modal>
-						</Link>
-						<Card.Img variant="top" src={GalleryOne} />
+						<Card.Img variant="top" src={GalleryOne}/>
 					</Card>
 				</div>
-				<div className="p-3 ">
+				<div className="px-3">
 					<Card className="border-0 bg-transparent">
-						<Link to="#">
-							<FaPlay className="playicon" onClick={() => setLgShow(true)} />
-
-							<Modal size="lg" show={lgShow} onHide={() => setLgShow(false)} aria-labelledby="example-modal-sizes-title-lg">
-								<Modal.Header closeButton>
-									<Modal.Title id="example-modal-sizes-title-lg">Ifad Group</Modal.Title>
-								</Modal.Header>
-								<Modal.Body className="modal_body_height">
-									<div class="embed-responsive embed-responsive-16by9 h-100">
-										<iframe
-											title="videptwo"
-											class="embed-responsive-item w-100 h-100"
-											src="https://www.youtube.com/embed/lvFSnh5NQ7I"
-											allowfullscreen
-										></iframe>
-									</div>
-								</Modal.Body>
-							</Modal>
-						</Link>
 						<Card.Img variant="top" src={GalleryThree} />
 					</Card>
 				</div>
-				<div className="p-3 ">
+				<div className="px-3">
 					<Card className="border-0 bg-transparent">
-						<Link to="#">
-							<FaPlay className="playicon" onClick={() => setLgShow(true)} />
-
-							<Modal size="lg" show={lgShow} onHide={() => setLgShow(false)} aria-labelledby="example-modal-sizes-title-lg">
-								<Modal.Header closeButton>
-									<Modal.Title id="example-modal-sizes-title-lg">Ifad Group</Modal.Title>
-								</Modal.Header>
-								<Modal.Body className="modal_body_height">
-									<div class="embed-responsive embed-responsive-16by9 h-100">
-										<iframe
-											title="videothree"
-											class="embed-responsive-item w-100 h-100"
-											src="https://www.youtube.com/embed/lvFSnh5NQ7I"
-											allowfullscreen
-										></iframe>
-									</div>
-								</Modal.Body>
-							</Modal>
-						</Link>
-						<Card.Img variant="top" src={GalleryTwo} />
+						<Card.Img variant="top" src={GalleryTwo}/>
 					</Card>
 				</div>
 			</Slider>

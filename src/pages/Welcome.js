@@ -1,10 +1,10 @@
 import React from 'react';
-import HomePage from '../components/Section/homepage/HomePage';
+import WelcomePage from '../components/Section/welcomepage/WelcomePage';
 
 const Welcome = () => {
 	return (
 		<>
-			<HomePage />
+			<WelcomePage />
 		</>
 	);
 };

@@ -1,11 +1,14 @@
 import React from 'react';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import Img from '../../../asset/images/news/Rectangle 27.png';
+import Img from '../../../asset/images/news/newsImg.png';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-// import { BsChevronRight } from 'react-icons/bs';
+import {Link} from 'react-router-dom';
+// import { IconName } from "react-icons/bs";
+import { BsArrowRight } from 'react-icons/bs';
 import { GoChevronRight } from 'react-icons/go';
+import { SlCalender } from "react-icons/sl";
 import Slider from 'react-slick';
 
 const NewsSlider = ({ sendCardData }) => {
@@ -43,15 +46,19 @@ const NewsSlider = ({ sendCardData }) => {
 							<>
 								<div className="mb-4 p-3">
 									<Card>
-										<Card.Img variant="top" src={Img} />
+										<div className="shape">
+											<Card.Img variant="top" src={Img}/>
+										</div>
 										<Card.Body>
 											{/* <Card.Title>Card Title</Card.Title> */}
-											<Card.Text className="fs-18 fw-semibold">{curElem.text} </Card.Text>
+											<Card.Text className="fs-18 fw-semibold">{curElem.text}</Card.Text>
 											<div className="d-flex justify-content-between">
-												<Button variant="" className="p-0 text-danger fw-bold">
-													Read More <GoChevronRight />
-												</Button>
-												<p className="m-0 text-warning">06 Nov, 2022</p>
+											<Link to="#" className='newsDetails'>
+													Read More<GoChevronRight/>
+												</Link>
+												<p className="m-0 newsDate">
+													06 Nov, 2022 <SlCalender className='fs-14 ms-2'/>
+												</p>
 											</div>
 										</Card.Body>
 									</Card>
@@ -60,8 +67,10 @@ const NewsSlider = ({ sendCardData }) => {
 						);
 					})}
 				</Slider>
-				<div className="text-center mb-5">
-					<button className='load_button fw-semibold font-oswald'>Load More</button>
+				<div className="text-center">
+					<Link to="#" className='moreBtn'>
+						Load More <BsArrowRight className='ps-1 fs-20'/>
+					</Link>
 				</div>
 			</div>
 		</>

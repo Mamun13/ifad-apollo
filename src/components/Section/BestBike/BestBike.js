@@ -10,7 +10,7 @@ const BestBike = () => {
 	return (
 		<>
 			<section className="best_bike">
-				<h2 className="text-center fw-bold font-oswald font-36 mt-3">Find the best Tyres</h2>
+				<h2 className="text-center fw-bold font-oswald font-36">Find the best Tyres</h2>
 				<p className="text-center font-16 font-lato">
 					It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
 					<br />

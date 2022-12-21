@@ -7,15 +7,9 @@ const Video = () => {
   return (
     <>
       <section id='' className='video'>
-        <div className="container">
-          <div className="row">
-            <div className="play-button text-center">
-              <Link to="#" className='text-danger playbutton'>
+              <Link to="#" className='playbutton'>
                 <BsFillPlayCircleFill className=''/>
               </Link>
-            </div>
-          </div>
-        </div>
       </section>
     </>
   )

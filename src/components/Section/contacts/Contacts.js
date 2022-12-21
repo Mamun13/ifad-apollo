@@ -8,11 +8,10 @@ import { BsPencil, BsArrowRight } from 'react-icons/bs';
 const Contacts = () => {
 	return (
 		<>
-			<section className="contacts">
+			<section id='contacts'>
 				<div className="container">
-					<div className="row">
-						<form action="" className="mt-5 mb-5">
-							<div className="row">
+						<form action="">
+							<div className="row ps-5">
 								<div className="col-lg-4">
 									<div class="mb-3">
 										<BiUser className='icon'/>
@@ -42,7 +41,6 @@ const Contacts = () => {
                                 </div> */}
 							</div>
 						</form>
-					</div>
 				</div>
 			</section>
 		</>

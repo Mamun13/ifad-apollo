@@ -8,18 +8,19 @@ const NewsEvents = () => {
   console.log(cardData);
 	return (
 		<>
-			<section className=" news-back">
+			<section id='newsEvents' className="section_padding">
 				<div className="container">
 					<div className="row">
-						<h2 className="text-center fw-bold font-oswald font-36 mt-5 news">News & Events</h2>
-						<p className="text-center font-16 font-lato mb-5">
+						<div className='sectionTitle'>
+							<h2 className="secTitle">News & Events</h2>
+							<p className="text-center font-16 font-lato mb-4">
 							It is a long established fact that a reader will be distracted by the readable content of a page when looking at its
 							layout.
-							<br />
+							<br/>
 							The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed
-						</p>
-              <NewsSlider sendCardData={cardData}/>
-						
+							</p>
+						</div>
+              			<NewsSlider sendCardData={cardData}/>
 					</div>
 				</div>
 			</section>

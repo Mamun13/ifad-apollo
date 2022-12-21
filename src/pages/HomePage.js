@@ -34,9 +34,7 @@ class HomePage extends Component {
   }
   
   render() {
-    if(this.state.isLoading) {
-      return (<Loading/>);
-    }else {
+    
       return (
         <Fragment>
           {/* <MobileNav/> */}
@@ -54,6 +52,6 @@ class HomePage extends Component {
       );
     }
   }
-}
+
 
 export default HomePage;

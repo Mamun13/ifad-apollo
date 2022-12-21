@@ -2,75 +2,58 @@ import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
+import InputGroup from 'react-bootstrap/InputGroup';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 import NavLogo from '../../../asset/images/logo/LOGO.png';
-import { ImSearch } from 'react-icons/im';
+import { AiOutlineSearch } from 'react-icons/ai';
 import Number from '../../../asset/images/footer/contact.png';
 
 const Manubar=()=> {
 	
 		return (
 			<Fragment>
-				<header className="sectionOne topSection clearfix" id="sectionOne">
-					<Navbar bg="secondary" expand="lg">
-						<Container fluid>
-							<Navbar.Brand href="#">
-								<img src={NavLogo} alt="" />
-							</Navbar.Brand>
-							<Navbar.Toggle aria-controls="navbarScroll" />
-							<Navbar.Collapse id="navbarScroll">
-								<Nav className="mx-auto my-2 my-lg-0 text-uppercase font-oswald fw-bold " style={{ maxHeight: '100px' }} navbarScroll>
-									<Nav.Link className="text-dark home_line">
-										<Link to="/" className="text-dark">
-											Home
-										</Link>
-									</Nav.Link>
-									<Nav.Link className="text-dark bike_line">
-										<Link to="" className="text-dark">
-											Royalenfield
-										</Link>
-									</Nav.Link>
-
-									{/* <NavDropdown title="Link" id="navbarScrollingDropdown">
-										<NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-										<NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
-										<NavDropdown.Divider />
-										<NavDropdown.Item href="#action5">Something else here</NavDropdown.Item>
-									</NavDropdown> */}
-									<Nav.Link className="text-dark dealer_line">
-										<Link to="" className="text-dark">
-											Dealer
-										</Link>
-									</Nav.Link>
-									<Nav.Link className="text-dark news_line">
-										<Link to="" className="text-dark">
-											News & Events
-										</Link>
-									</Nav.Link>
-									<Nav.Link className="text-dark about_line">
-										<Link to="/about_product"  className="text-dark">
-											About US
-										</Link>
-									</Nav.Link>
-									<Nav.Link href="#action6" className="text-dark contact_line">
-										<Link to="" className="text-dark">
-											Contact
-										</Link>
-									</Nav.Link>
-								</Nav>
-								<Form className="d-flex">
-									<Link to="/">
-										<ImSearch className="mt-3 me-2 text-light" />
+				<header id="header">
+					<Navbar bg="light" expand="lg" className='py-3'>
+					<Container fluid className='px-3 px-lg-5'>
+						<Navbar.Brand href="/">
+							<img className='nav_logo' src={NavLogo} alt="img"/>
+						</Navbar.Brand>
+						<Navbar.Toggle aria-controls="basic-navbar-nav" />
+						<Navbar.Collapse id="basic-navbar-nav">
+						<Nav className="me-auto">
+							<Nav.Link href="#" className='active'>Home</Nav.Link>
+							<Nav.Link href="#">Royalenfield</Nav.Link>
+							{/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+							<NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+							<NavDropdown.Item href="#action/3.2">
+								Another action
+							</NavDropdown.Item>
+							<NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+							<NavDropdown.Divider />
+							<NavDropdown.Item href="#action/3.4">
+								Separated link
+							</NavDropdown.Item>
+							</NavDropdown> */}
+							<Nav.Link href="#">Dealer</Nav.Link>
+							<Nav.Link href="#">News & Events</Nav.Link>
+							<Nav.Link href="#">About US</Nav.Link>
+							<Nav.Link href="#">Contact</Nav.Link>
+						</Nav>
+						<Form className="d-flex flex-column  align-items-lg-end  align-items-center">
+								<InputGroup className="mb-1">
+									<Form.Control className="ps-3 pe-4 searchBox" placeholder="SEARCH"/>
+									<AiOutlineSearch className='searchIcon'/>
+								</InputGroup>
+								<div className="hotline">
+									<Link to="#">
+										<img src={Number} alt="" className="ms-2 hotNumber"/>
 									</Link>
-									<div className="left">
-										<Link to="#">
-											<img src={Number} alt="" className="float-end ms-2" />
-										</Link>
-									</div>
-								</Form>
-							</Navbar.Collapse>
-						</Container>
+								</div>
+							</Form>
+						</Navbar.Collapse>
+					</Container>
 					</Navbar>
 				</header>
 			</Fragment>

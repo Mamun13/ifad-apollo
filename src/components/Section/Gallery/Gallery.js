@@ -11,17 +11,19 @@ const Gallery = () => {
 
 	return (
 		<>
-			<section className="gallery">
+			<section className="gallery section_padding">
 				<div className="container">
+						<div className='sectionTitle'>
+							<h2 className="secTitle">Product Gallery</h2>
+						</div>
 					<div className="row">
-						<h2 className="text-center fw-bold font-oswald font-36 mt-5 mb-4 product-g">Product Gallery</h2>
-						<div className="product_gallery mb-5">
-							<Tabs id="controlled-tab-example" className="d-flex justify-content-center " activeKey={key} onSelect={(k) => setKey(k)}>
+						<div className='galleryNavBox'>
+							<Tabs id="controlled-tab-example" className="galleryNav mb-4" activeKey={key} onSelect={(k) => setKey(k)}>
 								<Tab eventKey="home" title="Home">
-									<Galleryslider />
+									<Galleryslider/>
 								</Tab>
 								<Tab eventKey="profile" title="Profile">
-									<Galleryslider sendVideoData={videoData} />
+									<Galleryslider />
 								</Tab>
 							</Tabs>
 						</div>
