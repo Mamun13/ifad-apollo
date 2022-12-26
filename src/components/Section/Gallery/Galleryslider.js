@@ -1,17 +1,18 @@
 import React, { useState } from 'react';
-import Modal from 'react-bootstrap/Modal';
+import { Link } from 'react-router-dom';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
 import Card from 'react-bootstrap/Card';
 import GalleryOne from '../../../asset/images/gallery/Gallery img.png';
-import GalleryTwo from '../../../asset/images/gallery/Rectangle 63.png';
-import GalleryThree from '../../../asset/images/gallery/Galleryimg.png';
 import { FaPlay } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import Modal from 'react-bootstrap/Modal';
 
 const Galleryslider = ({ sendVideoData }) => {
-	const [lgShow, setLgShow] = useState(false);
+
+	const [show, setShow] = useState(false);
+	const handleClose = () => setShow(false);
+	const handleShow = () => setShow(true);
 
 	var settings = {
 		dots: false,
@@ -38,28 +39,56 @@ const Galleryslider = ({ sendVideoData }) => {
 			},
 		],
 	};
+
 	return (
 		<>
 			<Slider {...settings}>
-				{/* {sendVideoData.map((curElem)=>{})} */}
-				<div className="px-3">
+				<div className="p-3 ">
 					<Card className="border-0 bg-transparent">
+						<FaPlay variant="primary" onClick={handleShow} className="playicon"/>
+
+						<Modal show={show} onHide={handleClose}>
+							<div class="embed-responsive embed-responsive-16by9">
+								<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+							</div>
+						</Modal>
 						<Card.Img variant="top" src={GalleryOne} />
 					</Card>
 				</div>
-				<div className="px-3">
+				<div className="p-3 ">
 					<Card className="border-0 bg-transparent">
-						<Card.Img variant="top" src={GalleryOne}/>
+						<FaPlay variant="primary" onClick={handleShow} className="playicon" />
+
+						<Modal show={show} onHide={handleClose}>
+							<div class="embed-responsive embed-responsive-16by9">
+								<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+							</div>
+						</Modal>
+						<Card.Img variant="top" src={GalleryOne} />
 					</Card>
 				</div>
-				<div className="px-3">
+				<div className="p-3 ">
 					<Card className="border-0 bg-transparent">
-						<Card.Img variant="top" src={GalleryThree} />
+						<FaPlay variant="primary" onClick={handleShow} className="playicon" />
+
+						<Modal show={show} size="lg" onHide={handleClose} className=''>
+							<div class="embed-responsive embed-responsive-16by9">
+								<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+							</div>
+						</Modal>
+						<Card.Img variant="top" src={GalleryOne} />
 					</Card>
 				</div>
-				<div className="px-3">
+				<div className="p-3 ">
 					<Card className="border-0 bg-transparent">
-						<Card.Img variant="top" src={GalleryTwo}/>
+						<FaPlay variant="primary" onClick={handleShow} className="playicon" />
+
+						<Modal show={show} size="lg" onHide={handleClose} className=''>
+							<div class="embed-responsive embed-responsive-16by9">
+								<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+							</div>
+						</Modal>
+						<Card.Img variant="top" src={GalleryOne} />
 					</Card>
 				</div>
 			</Slider>

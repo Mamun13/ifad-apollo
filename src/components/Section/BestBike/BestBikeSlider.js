@@ -40,7 +40,7 @@ const BestBikeSlider = () => {
 
 				<div className="p-3 ">
 					<Link to="/about_product" className="text-dark">
-						<div className="bg text-center rounded shadow-md bg-body rounded">
+						<div className="text-center shadow bg-body-tertiary rounded">
 							<img src={TireOne} alt="" className="img-fluid img-align pt-4 pb-2" />
 							<p className="pb-4 font-lato fs-16">Lorem Ipsum is simply dummy</p>
 						</div>
@@ -48,21 +48,21 @@ const BestBikeSlider = () => {
 				</div>
 
 				<div className="p-3 ">
-					<div className="bg text-center rounded shadow-md bg-body rounded">
+					<div className="text-center shadow bg-body-tertiary rounded">
 						<img src={TireOne} alt="" className="img-fluid img-align pt-4 pb-2" />
 						<p className="pb-4 font-lato fs-16">Lorem Ipsum is simply dummy</p>
 					</div>
 				</div>
 
 				<div className="p-3 ">
-					<div className="bg text-center rounded shadow-md bg-body rounded">
+					<div className="text-center shadow bg-body-tertiary rounded">
 						<img src={TireOne} alt="" className="img-fluid img-align pt-4 pb-2" />
 						<p className="pb-4 font-lato fs-16">Lorem Ipsum is simply dummy</p>
 					</div>
 				</div>
 
 				<div className="p-3 ">
-					<div className="bg text-center rounded shadow-md bg-body rounded">
+					<div className="text-center shadow bg-body-tertiary rounded">
 						<img src={TireOne} alt="" className="img-fluid img-align pt-4 pb-2" />
 						<p className="pb-4 font-lato fs-16">Lorem Ipsum is simply dummy</p>
 					</div>
