@@ -16,7 +16,7 @@ import Welcome from '../pages/Welcome';
         <Switch>
           <Route exact path="/" component={HomePage}/>
           <Route exact path="/about_product" component={AboutProduct}/>
-          <Route exact path="/home_page" component={Welcome}/>
+          <Route exact path="/home" component={Welcome}/>
           
           <Route path="*" component={NotFountPage} />
         </Switch>

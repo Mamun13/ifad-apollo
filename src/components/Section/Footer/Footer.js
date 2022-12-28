@@ -37,11 +37,6 @@ const Footer = () => {
                                 </li>
                                 <li className="footerNav">
                                     <Link to="#" className="fNav">
-                                        Products
-                                    </Link>
-                                </li>
-                                <li className="footerNav">
-                                    <Link to="#" className="fNav">
                                         News & Events
                                     </Link>
                                 </li>

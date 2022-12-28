@@ -82,6 +82,12 @@ a.moreBtn:hover{
 	padding: 0 10px;
 	position: relative;
 }
+.secDetails{
+	max-width: 820px;
+	width: 100%;
+	margin: auto;
+	text-align: center;
+}
 .secTitle::after{
 	content: '';
 	display: inline-block;
@@ -104,6 +110,19 @@ a.moreBtn:hover{
 	top: calc(50% + 2px) !important;
 	left: -35px;
 	background-color: #EE3235;
+}
+@media (max-width: 767px){
+	.secTitle{
+		font-size: 28px;
+		padding-right: 0px !important;
+		padding-left: 20px;
+	}
+	.secTitle::after{
+		left: -35px;
+	}
+	.secTitle::before{
+		left: -15px;
+	}
 }
 // Section Title CSS End 
 
@@ -254,6 +273,12 @@ a.moreBtn:hover{
 	overflow: hidden;
 }
 
+@media(max-width: 767px){
+	#slider .carousel-item{
+		max-height: 500px !important;
+	}
+}
+
 #slider .slider_img{
 	width: 100%;
 	height: 100%;
@@ -328,32 +353,93 @@ a.moreBtn:hover{
 
 
 
-
-
 // best bike part start
-.best_bike .product_gallery.mb-5 {
-	height: 305px;
+#best_bike{
+	padding-top: 50px;
+	padding-bottom: 30px;
 }
-.best_bike ul.d-flex.justify-content-center.nav.nav-tabs {
-	border: 0;
+#best_bike .nav-tabs{
+	margin-bottom: 20px;
 }
-.best_bike .nav-link {
-	transition: none;
+#best_bike .product_gallery {
+	height: 400px;
 }
-.best_bike .card_bg {
-	background: url(../images//gallery/Galleryimg.png) no-repeat center;
-	background-size: cover;
+@media (max-width: 767px){
+	#best_bike .product_gallery {
+		height: 330px;
+	}
 }
-.best_bike .product_gallery .img-align {
-	margin-left: 50%;
-	transform: translate(-50%);
+
+#best_bike .bikeImg{
+	max-width: 100%;
+	object-fit: contain;
+	display: inline-block;
+	padding: 15px;
+	padding-bottom: 10px;
 }
-.best_bike .product_gallery .bg {
-	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+#best_bike .nav-tabs{
+	border-color: transparent !important;
 }
-.best_bike .nav-link {
-	color: none !important;
+#best_bike .nav-link{
+	color: #222 !important;
+	border-color: transparent !important;
+	border-radius: 4px !important;
 }
+#best_bike .nav-link.active{
+	color: #fff !important;
+	background-color: #EE3235 !important;
+}
+
+
+// Arrow custome design css 
+#best_bike .slick-next,
+#best_bike .slick-prev{
+	width: 30px;
+	height: 30px;
+	border-radius: 4px;
+	padding: 6px;
+	background-color: #f69340;
+}
+
+@media (max-width: 1199px){
+	#best_bike .slick-next,
+	#best_bike .slick-prev{
+		display: none !important;
+	}
+}
+
+#best_bike .slick-prev:before,
+#best_bike .slick-next:before{
+	content: '' !important;
+    display: block;
+    width: 20x;
+    height:20px;
+    background-image: url(../images/next0299.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+	opacity: 1 !important;
+}
+
+#best_bike .slick-next{
+	right: 30px;
+	top: -15px;
+}
+
+#best_bike .slick-prev{
+	left: initial;
+	top: -30px;
+	right: 55px;
+	transform: rotate(180deg);
+	padding-top: 5px;
+	width: 40px ;
+	padding-left: 15px;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	background-color: #f9ba89;
+}
+// Arrow custome design css 
+
 // best bike part end
 
 
@@ -364,6 +450,16 @@ a.moreBtn:hover{
 	min-height: 575px;
 	background-color: #fef1f1;
 	position: relative;
+}
+
+@media (max-width: 767px){
+	#gallery{
+		min-height: 480px;
+	}
+	#gallery.section_padding{
+		padding-top: 30px !important;
+		padding-bottom: 0px !important;
+	}
 }
 
 #gallery .nav-link,
@@ -402,20 +498,6 @@ a.moreBtn:hover{
 	position: relative;
 }
 
-#gallery .slick-prev{
-	left: initial;
-	top: -30px;
-	right: 70px !important;
-	transform: rotate(180deg);
-}
-#gallery .slick-next{
-	right: 30px;
-	top: -15px;
-}
-// #gallery .slick-next::after{
-// 	content: '';
-// }
-
 #gallery .slick-next,
 #gallery .slick-prev{
 	width: 30px;
@@ -423,6 +505,13 @@ a.moreBtn:hover{
 	border-radius: 4px;
 	padding: 6px;
 	background-color: #f69340;
+}
+
+@media (max-width: 767px){
+	#gallery .slick-next,
+	#gallery .slick-prev{
+		display: none !important;
+	}
 }
 
 #gallery .slick-prev:before,
@@ -435,9 +524,26 @@ a.moreBtn:hover{
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+	opacity: 1 !important;
 }
 
+#gallery .slick-next{
+	right: 30px;
+	top: -15px;
+}
 
+#gallery .slick-prev{
+	left: initial;
+	top: -30px;
+	right: 55px;
+	transform: rotate(180deg);
+	padding-top: 5px;
+	width: 40px ;
+	padding-left: 15px;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	background-color: #f9ba89;
+}
 
 
 .playicon{
@@ -477,7 +583,11 @@ iframe{
 	height: 400px;
 	position: relative;
 }
-
+@media (max-width: 767px){
+	.video{
+		height: 250px;
+	}
+}
 
 .playbutton {
 	position: absolute !important;
@@ -602,6 +712,7 @@ iframe{
 	display: flex;
 	align-items: center;
 }
+
 #newsEvents .slick-prev:before,
 #newsEvents .slick-next:before{
 	content: '' !important;
@@ -616,8 +727,25 @@ iframe{
 #newsEvents .slick-prev:before{
 	transform: rotate(-180deg);
 }
-#newsEvents .slick-prev{
-	left: -40px !important;
+@media (min-width: 600px){
+	#newsEvents .slick-prev{
+		left: -40px !important;
+	}
+	#newsEvents .slick-next{
+		right: -30px !important;
+	}
+}
+
+@media (max-width: 599px){
+	#newsEvents .newsItem{
+		margin: 0px 20px;
+	}
+	#newsEvents .slick-prev{
+		left: -2px !important;
+	}
+	#newsEvents .slick-next{
+		right: 8px !important;
+	}
 }
 // News & Events CSS end
 
@@ -772,9 +900,7 @@ input[type=number] {
 		padding-bottom: 40px;
 	}
 }
-
 // Map CSS end
-
 
 
 
@@ -783,6 +909,7 @@ input[type=number] {
 	background: url(.././images/footer/backgrond.png) no-repeat center;
 	background-size: cover;
 	background-position: center;
+	overflow-x: hidden;
 }
 #footer{
 	padding-top: 60px;

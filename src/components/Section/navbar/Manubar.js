@@ -26,7 +26,7 @@ const Manubar=()=> {
 						<Navbar.Collapse id="basic-navbar-nav">
 						<Nav className="me-auto">
 							<Nav.Link to="#" className='active'>Home</Nav.Link>
-							<Nav.Link to="#">Royalenfield</Nav.Link>
+							<Nav.Link to="#">Products</Nav.Link>
 							{/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
 							<NavDropdown.Item to="#action/3.1">Action</NavDropdown.Item>
 							<NavDropdown.Item to="#action/3.2">

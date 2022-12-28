@@ -23,7 +23,7 @@ const WelcomePage = () => {
 									<div class="logoAndBtn">
 										<img class="apolloLogo" src={HomeApolloLogo} alt="img" />
 										<p class="mt-3 mt-md-5">
-											<a class="goBtn" target="_blank" href="#">
+											<a class="goBtn" target="_blank" href="/home">
 												<svg width="75" height="14" viewBox="0 0 75 14" fill="none" xmlns="http://www.w3.org/2000/svg">
 													<path d="M64.5 0.910837L74.0687 7L64.5 13.0892V0.910837Z" stroke="#3F017A" />
 													<line x1="64" y1="7.5" y2="7.5" stroke="#3F017A" />

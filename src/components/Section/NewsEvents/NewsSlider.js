@@ -25,7 +25,6 @@ const NewsSlider = ({ sendCardData }) => {
 					slidesToShow: 2,
 					slidesToScroll: 2,
 					infinite: true,
-					dots: true,
 				},
 			},
 			{
@@ -39,12 +38,12 @@ const NewsSlider = ({ sendCardData }) => {
 	};
 	return (
 		<>
-			<div>
+			{/* <div> */}
 				<Slider {...settings}>
 					{sendCardData.map((curElem) => {
 						return (
 							<>
-								<div className="mb-4 p-3">
+								<div className="mb-4 p-3 newsItem">
 									<Card>
 										<div className="shape">
 											<Card.Img variant="top" src={Img}/>
@@ -72,7 +71,7 @@ const NewsSlider = ({ sendCardData }) => {
 						Load More <BsArrowRight className='ps-1 fs-20'/>
 					</Link>
 				</div>
-			</div>
+			{/* </div> */}
 		</>
 	);
 };

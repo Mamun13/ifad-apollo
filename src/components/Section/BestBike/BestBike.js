@@ -9,14 +9,15 @@ const BestBike = () => {
 	const [key, setKey] = useState('home');
 	return (
 		<>
-			<section className="best_bike section_padding">
-				<h2 className="text-center fw-bold font-oswald font-36">Find the best Tyres</h2>
-				<p className="text-center font-16 font-lato">
-					It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-					<br />
-					The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed
-				</p>
+			<section id='best_bike'>
 				<div className="container">
+					<div className='sectionTitle'>
+						<h2 className="secTitle">Find the best Tyres</h2>
+						<p className="font-16 font-lato mb-4 secDetails">
+							It is a long established fact that a reader will be distracted by the readable content of a page when looking at its
+							layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed
+						</p>
+					</div>
 					<div className="row">
 						<div className="product_gallery">
 							<Tabs id="controlled-tab-example" className="d-flex justify-content-center " activeKey={key} onSelect={(k) => setKey(k)}>

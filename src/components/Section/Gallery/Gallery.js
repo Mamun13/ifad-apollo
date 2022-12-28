@@ -9,7 +9,6 @@ const Gallery = () => {
 	return (
 		<>
 
-
 		<section id='gallery' className="section_padding">
 			<div className="container">
 					<div className='sectionTitle'>
