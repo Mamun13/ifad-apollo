@@ -1183,10 +1183,21 @@ input[type='number'] {
 .exColor {
 	border-color: #da291c;
 }
-
+#about_product p {
+	text-align: justify !important;
+}
 @media (max-width: 767px) {
 	.item1::after {
 		display: none;
+	}
+	#about_product .sec-head {
+		text-align: center !important;
+		padding-top: 10px;
+	}
+	#about_product p {
+		// text-align: center !important;
+		// padding-top: 10px;
+		text-align: justify !important;
 	}
 	.tayerImg {
 		max-width: 140px;
@@ -1213,3 +1224,13 @@ input[type='number'] {
 	}
 }
 /* welcome end here  */
+
+// about_product CSS start 
+
+#about_product .about-us-img {
+	max-width: 360px;
+	width: 100%;
+	max-height: 500px;
+	height: auto;
+	object-fit: contain;
+}
