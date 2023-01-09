@@ -8,6 +8,25 @@ import Tabs from 'react-bootstrap/Tabs';
 import Accordion from 'react-bootstrap/Accordion';
 
 const SingleProduct = () => {
+
+	// Function will execute on click of button
+	const onButtonClick = () => {
+		// using Java Script method to get PDF file
+		fetch('../demofile.pdf').then(response => {
+			response.blob().then(blob => {
+				// Creating new object of PDF file
+				const fileURL = window.URL.createObjectURL(blob);
+				// Setting various property values
+				let alink = document.createElement('a');
+				alink.href = fileURL;
+				alink.download = '../demofile.pdf';
+				alink.click();
+			})
+		})
+	}
+
+
+
 	const images = [
 		{
 			original: 'https://picsum.photos/id/1018/1000/600/',
@@ -36,8 +55,13 @@ const SingleProduct = () => {
 							<ImageGallery items={images}/>
 						</div>
 						<div className="col-lg-6">
+							<div className='tabItem'>
+
+								<button onClick={onButtonClick} className='downloadPdf'>
+									Download Brochure
+								</button>
 							<Tabs defaultActiveKey="profile" id="uncontrolled-tab-example" className="mb-3">
-								<Tab eventKey="profile" title={<span className="font-oswald">Over View</span>}>
+								<Tab eventKey="profile" title={<span className="font-oswald tab-font-size">Over View</span>}>
 									<p className="">
 										Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
 										industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
@@ -45,7 +69,7 @@ const SingleProduct = () => {
 										electronic typesetting, remaining essentially unchanged.
 									</p>
 								</Tab>
-								<Tab eventKey="contact" title={<span className="font-oswald">Technical Spacification</span>}>
+								<Tab eventKey="contact" title={<span className="font-oswald  tab-font-size">Technical Spacification</span>}>
 									<Accordion>
 										<Accordion.Item eventKey="0">
 											<Accordion.Header>155/70 R 13</Accordion.Header>
@@ -65,6 +89,7 @@ const SingleProduct = () => {
 									</Accordion>
 								</Tab>
 							</Tabs>
+							</div>
 						</div>
 					</div>
 				</div>
