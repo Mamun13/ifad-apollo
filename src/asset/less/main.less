@@ -129,7 +129,6 @@ a.moreBtn:hover{
 
 
 
-
 // NavBar CSS start
 #header{
 	position: absolute;
@@ -154,6 +153,7 @@ a.moreBtn:hover{
 	color: #222;
 	position: relative;
 	margin: 0px 8px;
+	transition: all 0.3s ease-in;
 }
 
 @media (min-width: 992px){
@@ -161,7 +161,7 @@ a.moreBtn:hover{
 		content: '';
 		display: inline-block;
 		width: 15px;
-		height: 3px;
+		height: 2px;
 		background-color: #EE3235;
 		position: absolute;
 		top: 0;
@@ -169,13 +169,13 @@ a.moreBtn:hover{
 		transform: translateX(-50%) rotate(-65deg);
 		z-index: 200;
 		opacity: 0;
-		transition: all 0.19s;
+		transition: all 0.5s ease;
 	}
 	#header .nav-link::before{
 		content: '';
 		display: inline-block;
 		width: 15px;
-		height: 3px;
+		height: 2px;
 		background-color: #EE3235;
 		position: absolute;
 		bottom: 0;
@@ -183,7 +183,7 @@ a.moreBtn:hover{
 		transform: translateX(-50%) rotate(-65deg);
 		z-index: 200;
 		opacity: 0;
-		transition: all 0.19s;
+		transition: all 0.5s ease;
 	}
 	#header .nav-link:hover{
 		color: #fff;
@@ -192,6 +192,7 @@ a.moreBtn:hover{
 	#header .nav-link:hover::before{
 		opacity: 1;
 	}
+
 	#header .nav-link.active{
 		color: #fff;
 	}
@@ -1076,6 +1077,23 @@ input[type=number] {
 }
 #about_product .image-gallery-icon:hover{
 	color: #fff !important;
+}
+#about_product .tabItem{
+	position: relative;
+}
+#about_product .downloadPdf{
+	border: 0;
+	padding: 9px 12px;
+	position: absolute;
+	right: 0;
+	top: -5px;
+	background-color: #aaa;
+	border-radius: 4px;
+	color: #fff;
+	transition: all 0.4s;
+}
+#about_product .downloadPdf:hover{
+	background-color: #EE3235;
 }
 
 @media (max-width: 991px){
