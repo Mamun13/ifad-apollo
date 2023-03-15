@@ -2,6 +2,11 @@ import React from 'react';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import 'react-image-gallery/styles/css/image-gallery.css';
 import pageBannerImg from '../../../asset/images/about_bg/pageBanner.png';
+import Card from 'react-bootstrap/Card';
+import { FiUsers } from 'react-icons/fi';
+import { FaHandshake } from 'react-icons/fa';
+import { TbStairsUp } from 'react-icons/tb';
+import { RiTeamFill } from 'react-icons/ri';
 
 const AboutUs = () => {
 	return (
@@ -42,6 +47,90 @@ const AboutUs = () => {
 					</div>
 				</div>
 			</section>
+
+			
+			{/* values section start */}
+
+			<section id="values" className='values'>
+				<div className="container">
+					<h1 className='text-center text-white value-align'>Values</h1>
+				</div>
+			</section>
+			<section id="values-content" className=''>
+				<div className="container">
+					<div className="row">
+						<div className='col-lg-3 text-center'>
+							<div className="space-content">
+								<Card className="value-content-bg rounded-4" style={{background:"#f68422"}}>
+									{/* <Card.Img variant="top" src="holder.js/100px180" /> */}
+									<div>
+										<FiUsers className="mx-4 mt-5 text-center" size={"50px"} color={"white"}/>
+									</div>
+									<Card.Body>
+										<Card.Title className="font-poppins text-white mt-2"><h4 className="fw-700">CUSTOMER FOCUS</h4></Card.Title>
+										<Card.Text className="card-align text-white text-center pb-3 pt-2 ">
+										We recognize that our customers are the reason for our success in business, and we are committed to listen and respond positively to their needs.
+										</Card.Text>
+									</Card.Body>
+								</Card>
+							</div>
+						</div>
+
+						<div className='col-lg-3 text-center'>
+						<div className="space-content">
+							<Card className="card-bg rounded-4" style={{background:"#f68422"}}>
+								{/* <Card.Img variant="top" src="holder.js/100px180" /> */}
+								<div>
+									<FaHandshake className="mx-4 mt-5 text-center" size={"50px"} color={"white"}/>
+								</div>
+								<Card.Body>
+									<Card.Title className="font-poppins text-white mt-2"><h4 className="fw-700">RESPONSIBILITIES</h4></Card.Title>
+									<Card.Text className="card-align text-white text-center pb-3 pt-2 ">
+									We recognize that our customers are the reason for our success in business, and we are committed to listen and respond positively to their needs.
+									</Card.Text>
+								</Card.Body>
+							</Card>
+						</div>
+					</div>
+
+					<div className='col-lg-3 text-center'>
+						<div className="space-content">
+							<Card className="value-content-bg rounded-4" style={{background:"#f68422"}}>
+								{/* <Card.Img variant="top" src="holder.js/100px180" /> */}
+								<div>
+									<TbStairsUp className="mx-4 mt-5 text-center" size={"50px"} color={"white"}/>
+								</div>
+								<Card.Body>
+									<Card.Title className="font-poppins text-white mt-2"><h4 className="fw-700">ASPIRATION</h4></Card.Title>
+									<Card.Text className="card-align text-white text-center pb-3 pt-2 ">
+									We recognize that our customers are the reason for our success in business, and we are committed to listen and respond positively to their needs.
+									</Card.Text>
+								</Card.Body>
+							</Card>
+						</div>
+					</div>
+
+					<div className='col-lg-3 text-center'>
+						<div className="space-content">
+							<Card className="value-content-bg rounded-4" style={{background:"#f68422"}}>
+								<div>
+									<RiTeamFill className="mx-4 mt-5 text-center" size={"50px"} color={"white"}/>
+								</div>
+								<Card.Body>
+									<Card.Title className="font-poppins text-white mt-2"><h4 className="fw-700">TEAMWORK</h4></Card.Title>
+									<Card.Text className="card-align text-white text-center pb-3 pt-2 ">
+									We recognize that our customers are the reason for our success in business, and we are committed to listen and respond positively to their needs.
+									</Card.Text>
+								</Card.Body>
+							</Card>
+						</div>
+					</div>
+					</div>
+					
+				</div>
+			</section>
+
+				{/* values section end */}
 		</>
 	);
 };
