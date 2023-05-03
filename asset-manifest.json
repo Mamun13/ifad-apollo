@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/ifad-apollo/static/css/main.366d655a.chunk.css",
+    "main.js": "/ifad-apollo/static/js/main.f16e6986.chunk.js",
+    "main.js.map": "/ifad-apollo/static/js/main.f16e6986.chunk.js.map",
+    "runtime-main.js": "/ifad-apollo/static/js/runtime-main.1852bed3.js",
+    "runtime-main.js.map": "/ifad-apollo/static/js/runtime-main.1852bed3.js.map",
+    "static/css/2.08e368c3.chunk.css": "/ifad-apollo/static/css/2.08e368c3.chunk.css",
+    "static/js/2.4b25f592.chunk.js": "/ifad-apollo/static/js/2.4b25f592.chunk.js",
+    "static/js/2.4b25f592.chunk.js.map": "/ifad-apollo/static/js/2.4b25f592.chunk.js.map",
+    "static/js/3.0f9e750d.chunk.js": "/ifad-apollo/static/js/3.0f9e750d.chunk.js",
+    "static/js/3.0f9e750d.chunk.js.map": "/ifad-apollo/static/js/3.0f9e750d.chunk.js.map",
+    "index.html": "/ifad-apollo/index.html",
+    "static/css/2.08e368c3.chunk.css.map": "/ifad-apollo/static/css/2.08e368c3.chunk.css.map",
+    "static/css/main.366d655a.chunk.css.map": "/ifad-apollo/static/css/main.366d655a.chunk.css.map",
+    "static/js/2.4b25f592.chunk.js.LICENSE.txt": "/ifad-apollo/static/js/2.4b25f592.chunk.js.LICENSE.txt",
+    "static/media/1.4610db5c.png": "/ifad-apollo/static/media/1.4610db5c.png",
+    "static/media/Apollo-Tyres-Logo-Vector.f0ecffff.png": "/ifad-apollo/static/media/Apollo-Tyres-Logo-Vector.f0ecffff.png",
+    "static/media/main.css": "/ifad-apollo/static/media/videobg.2582721f.png",
+    "static/media/Gallery img.8896c272.png": "/ifad-apollo/static/media/Gallery img.8896c272.png",
+    "static/media/apolloLogo.6c43fe98.png": "/ifad-apollo/static/media/apolloLogo.6c43fe98.png",
+    "static/media/responsive.css": "/ifad-apollo/static/media/bg_top.594fa448.png",
+    "static/media/client.8b85900f.jpg": "/ifad-apollo/static/media/client.8b85900f.jpg",
+    "static/media/motorcycle-bg.682d5fd5.png": "/ifad-apollo/static/media/motorcycle-bg.682d5fd5.png",
+    "static/media/newsImg.d028d60c.png": "/ifad-apollo/static/media/newsImg.d028d60c.png",
+    "static/media/pageBanner.dde2663b.png": "/ifad-apollo/static/media/pageBanner.dde2663b.png",
+    "static/media/slick-theme.css": "/ifad-apollo/static/media/slick.c94f7671.ttf",
+    "static/media/slider1.e1c998f8.jpg": "/ifad-apollo/static/media/slider1.e1c998f8.jpg",
+    "static/media/slider2.42219572.jpg": "/ifad-apollo/static/media/slider2.42219572.jpg",
+    "static/media/slider3.335096e8.jpg": "/ifad-apollo/static/media/slider3.335096e8.jpg",
+    "static/media/tayer-bg.fd3ac510.png": "/ifad-apollo/static/media/tayer-bg.fd3ac510.png",
+    "static/media/trans-map2.08695c51.png": "/ifad-apollo/static/media/trans-map2.08695c51.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1852bed3.js",
+    "static/css/2.08e368c3.chunk.css",
+    "static/js/2.4b25f592.chunk.js",
+    "static/css/main.366d655a.chunk.css",
+    "static/js/main.f16e6986.chunk.js"
+  ]
+}
